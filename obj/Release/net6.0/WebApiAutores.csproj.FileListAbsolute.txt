@@ -102,3 +102,9 @@ C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\ref
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\WebApiAutores.pdb
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\WebApiAutores.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\ref\WebApiAutores.dll
+C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\bin\Release\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\bin\Release\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\bin\Release\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\bin\Release\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\bin\Release\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\bin\Release\net6.0\Microsoft.Extensions.Identity.Stores.dll

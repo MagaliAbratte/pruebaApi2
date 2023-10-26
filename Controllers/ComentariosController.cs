@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Principal;
@@ -9,6 +11,7 @@ namespace WebApiAutores.Controllers
 {
     [ApiController]
     [Route("api/libros/{libroId:int}/comentarios")] //la ruta expresa la dependencia de comentarios con libros
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class ComentariosController : ControllerBase
     {
         private readonly ApplicationDbContext context;

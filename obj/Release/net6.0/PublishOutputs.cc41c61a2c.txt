@@ -12,6 +12,10 @@ C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\Pub
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\K4os.Compression.LZ4.dll
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\K4os.Compression.LZ4.Streams.dll
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\K4os.Hash.xxHash.dll
+C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
@@ -23,6 +27,8 @@ C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\Pub
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Logging.dll
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Usuario\source\repos\WebApiAutores\WebApiAutores\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Options.dll

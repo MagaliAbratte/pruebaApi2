@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApiAutores.DTOs;
@@ -6,8 +8,9 @@ using WebApiAutores.Entidades;
 
 namespace WebApiAutores.Controllers
 {
-    [ApiController] //validaciones automaricas
+    [ApiController] //validaciones automaticas
     [Route("api/autores")] //ruta principal
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class AutoresController : ControllerBase
     {
         private readonly ApplicationDbContext context;
@@ -20,6 +23,7 @@ namespace WebApiAutores.Controllers
         }
 
         [HttpGet]
+        
         public async Task<ActionResult<List<AutorDTO>>> Get()
         {
             var autores = await context.Autores.ToListAsync(); //trae una lista (.ToListAsync)
