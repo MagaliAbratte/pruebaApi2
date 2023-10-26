@@ -14,7 +14,7 @@ namespace WebApiAutores
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<AutorLibro>().HasKey(al => new { al.AutorId, al.LibroId });
-        }
+        } //lave primaria compartida entre libro y autor
 
         public DbSet<Autor> Autores { get; set; }
         public DbSet<Libro> Libros { get; set; }

@@ -8,8 +8,8 @@ namespace WebApiAutores.Utilidades
     {
         public AutoMapperProfiles()
         {
-            CreateMap<AutorCreacionDTO, Autor>(); //POST ENVIAR UN DATO A LA BD
-            CreateMap<Autor, AutorDTO>(); //GET MOSTRAR UN DATO DE LA BD
+            CreateMap<AutorCreacionDTO, Autor>(); //POST ENVIAR UN DATO A LA BD, fuente-destino
+            CreateMap<Autor, AutorDTO>(); //GET MOSTRAR UN DATO DE LA BD, fuente-destino
             CreateMap<Autor, AutorDTOconLibros>()
                  .ForMember(x => x.Libros, opciones => opciones.MapFrom(MapAutorDTOLibros));
             CreateMap<LibroCreacionDTO, Libro>()
@@ -19,7 +19,7 @@ namespace WebApiAutores.Utilidades
             CreateMap<Libro, LibroDTOconAutores>()
                 .ForMember(x => x.Autores, opciones => opciones.MapFrom(MapLibroDTOAutores));
             //PARA UN ENDPOINT GET. Aca estamos generando el mapeo para meter datos en Autores, pasando por la entidad intermedia "AutorLibro", que esta dentro de "Libro".
-            CreateMap<ComentarioCreacionDTO, Comentario>();
+            CreateMap<ComentarioCreacionDTO, Comentario>(); //post
             CreateMap<Comentario, ComentarioDTO>();
         }
 

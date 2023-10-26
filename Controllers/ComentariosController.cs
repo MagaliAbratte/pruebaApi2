@@ -8,7 +8,7 @@ using WebApiAutores.Entidades;
 namespace WebApiAutores.Controllers
 {
     [ApiController]
-    [Route("api/libros/{libroId:int}/comentarios")]
+    [Route("api/libros/{libroId:int}/comentarios")] //la ruta expresa la dependencia de comentarios con libros
     public class ComentariosController : ControllerBase
     {
         private readonly ApplicationDbContext context;

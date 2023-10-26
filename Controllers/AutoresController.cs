@@ -6,8 +6,8 @@ using WebApiAutores.Entidades;
 
 namespace WebApiAutores.Controllers
 {
-    [ApiController]
-    [Route("api/autores")]
+    [ApiController] //validaciones automaricas
+    [Route("api/autores")] //ruta principal
     public class AutoresController : ControllerBase
     {
         private readonly ApplicationDbContext context;
@@ -15,24 +15,25 @@ namespace WebApiAutores.Controllers
 
         public AutoresController(ApplicationDbContext context, IMapper mapper)
         {
-            this.context = context;
+            this.context = context; //campo de la clase accesible desde toda la clase. para poder enviar, borrar, etc 
             this.mapper = mapper;
         }
 
         [HttpGet]
         public async Task<ActionResult<List<AutorDTO>>> Get()
         {
-            var autores = await context.Autores.ToListAsync();
-            return mapper.Map<List<AutorDTO>>(autores);
+            var autores = await context.Autores.ToListAsync(); //trae una lista (.ToListAsync)
+            return mapper.Map<List<AutorDTO>>(autores); // List: lo que muestro (el dto), como parametro la entidad
         }
 
-        [HttpGet("{id:int}", Name = "obtenerAutor" )]
+
+        [HttpGet("{id:int}", Name = "obtenerAutor")]
         public async Task<ActionResult<AutorDTOconLibros>> Get(int id)
         {
             var autor = await context.Autores
                 .Include(x => x.AutoresLibros)
-                .ThenInclude (x => x.Libro)
-                .FirstOrDefaultAsync(x => x.Id == id);
+                .ThenInclude(x => x.Libro)
+                .FirstOrDefaultAsync(x => x.Id == id); //trae un solo autor (.FirstOrDefau.....) si no lo encuentra, el valor por defecto es null, por eso la validacion que sigue
 
             if (autor == null)
             {
@@ -75,8 +76,8 @@ namespace WebApiAutores.Controllers
          {
            var autor = mapper.Map<Autor>(autorCreacionDTO);
 
-           context.Add(autor);
-           await context.SaveChangesAsync();
+           context.Add(autor); // agrego el autor al contexto
+           await context.SaveChangesAsync(); //guardo los cambios de manera asincrona y se crea el autor en la base de datos
 
             var autorDTO = mapper.Map<AutorDTO>(autor);
 
