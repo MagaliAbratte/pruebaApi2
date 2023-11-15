@@ -7,7 +7,7 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdjKWGlr1yUmmUrADYuhbsAAAAAACAAAAAAAQZgAAAAEAACAAAADVxZyyL2sHc8mZtrX4HGJ3m35zPcH/bndthcVszjcGVwAAAAAOgAAAAAIAACAAAABVla+Pli9v+eX/su1KJY0aSQ7x1WHGQQlWCdluklZTXCAAAAC3tcy8pvZ9dT64I6RBjl4dd7OQprNaHpcxBtw0NhAXdEAAAABvHvdEnNG6xBZVrEHEXHvTCGmq5Vi5+GYDcXq1fSHIDHLY9a7cuJUtI9eBTT+Yz9tnINkJkeHKAhZ8QxuvOibB</EncryptedPassword>
-    <History>False|2023-10-26T19:54:04.2807205Z;False|2023-10-26T16:51:09.9702573-03:00;False|2023-10-26T16:47:46.4390954-03:00;False|2023-10-26T16:46:32.0807142-03:00;False|2023-10-26T16:42:49.3970476-03:00;</History>
+    <History>False|2023-11-14T16:51:01.8945108Z;False|2023-10-26T16:54:04.2807205-03:00;False|2023-10-26T16:51:09.9702573-03:00;False|2023-10-26T16:47:46.4390954-03:00;False|2023-10-26T16:46:32.0807142-03:00;False|2023-10-26T16:42:49.3970476-03:00;</History>
     <LastFailureDetails />
     <_PublishTargetUrl>ftp://win5161.site4now.net:21/webapiautores</_PublishTargetUrl>
   </PropertyGroup>

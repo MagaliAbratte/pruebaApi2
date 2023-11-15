@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\WebApiAutores\\WebApiAutores\\WebApiAutores.csproj": {}
+    "C:\\Users\\Magali Abratte\\source\\repos\\pruebaApi3\\WebApiAutores.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\WebApiAutores\\WebApiAutores\\WebApiAutores.csproj": {
+    "C:\\Users\\Magali Abratte\\source\\repos\\pruebaApi3\\WebApiAutores.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\WebApiAutores\\WebApiAutores\\WebApiAutores.csproj",
+        "projectUniqueName": "C:\\Users\\Magali Abratte\\source\\repos\\pruebaApi3\\WebApiAutores.csproj",
         "projectName": "WebApiAutores",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\WebApiAutores\\WebApiAutores\\WebApiAutores.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\WebApiAutores\\WebApiAutores\\obj\\",
+        "projectPath": "C:\\Users\\Magali Abratte\\source\\repos\\pruebaApi3\\WebApiAutores.csproj",
+        "packagesPath": "C:\\Users\\Magali Abratte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Magali Abratte\\source\\repos\\pruebaApi3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Magali Abratte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

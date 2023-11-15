@@ -61,27 +61,28 @@ namespace WebApiAutores.Controllers
         private async Task<RespuestaAutenticacion> ConstruirToken(CredencialesUsuario credencialesUsuario)
         {
             var claims = new List<Claim>()
-            {
-                new Claim("email", credencialesUsuario.Email),
-                new Claim("lo que yo quiera", "cualquier otro valor")
-            };
+                {
+                    new Claim("email", credencialesUsuario.Email),
+                    //username, email, role
+                    new Claim("password", credencialesUsuario.Password) //riesgoso, no incluir passwords en claims
+                };
 
-            var usuario = await userManager.FindByEmailAsync(credencialesUsuario.Email);
-            var claimsDB = await userManager.GetClaimsAsync(usuario);
+            //var usuario = await userManager.FindByEmailAsync(credencialesUsuario.Email);
+            //var claimsDB = await userManager.GetClaimsAsync(usuario);
 
-            claims.AddRange(claimsDB);
+            //claims.AddRange(claimsDB);
 
-            var llave = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["llavejwt"]));
-            var creds = new SigningCredentials(llave, SecurityAlgorithms.HmacSha256);
-            var expiracion = DateTime.UtcNow.AddYears(1);
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["llavejwt"]));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var expiration = DateTime.UtcNow.AddHours(24);
 
-            var securityToken = new JwtSecurityToken(issuer: null, audience: null, claims: claims,
-                expires: expiracion, signingCredentials: creds);
+            var securityToken = new JwtSecurityToken(issuer: configuration["llavejwt"], audience: null, claims: claims,
+                expires: expiration, signingCredentials: creds);
 
             return new RespuestaAutenticacion()
             {
                 Token = new JwtSecurityTokenHandler().WriteToken(securityToken),
-                Expiracion = expiracion
+                Expiracion = expiration
             };
         }
     }
